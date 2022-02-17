@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+</head>
+<body>
+    <h1>It ia a <%= kindofday %></h1>
+    <ul>
+        <li>Buy Milk</li>
+        <li>Boil it</li>
+        <li>Freeze it</li>
+        <li>Eat it</li>
+        <!-- // to make the li in new line -->
+        <% for(let i=0;i<kindofdata.length;i++){%>
+             <li><%= kindofdata[i]%></li>
+
+         <%}%>
+    </ul>
+    <form action="/" method="post">
+        <input type="text" name="additem" placeholder="Enter the next item here"/>
+        <button type="submit" name="submit" >Add Item</button>
+    </form>
+</body>
+</html>
